@@ -10,6 +10,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body style="background-color: rgb(17, 17, 17); color: whitesmoke">
     <div>
@@ -25,14 +26,17 @@
         style="background-color: rgb(32, 32, 32); border-radius: 0.5rem;"
       >
         <div
-          class="align-content-center p-2 px-10"
+          class="align-content-center p-2 px-3"
           style="color: rgb(238, 75, 43); border-radius: 0.5rem"
+          onclick="faAngleChange()"
         >
           Unit 1: Maths
-          <button class="btn btn-primary float-end mx-lg-2">enter</button>
+          <button class="btn btn-primary float-end mx-lg-2" style="height: 2rem;">
+             <i class="fa fa-angle-down faAngle"></i>
+          </button>
         </div>  
         
-        <div class="mx-4">
+        <div class="mx-4 d-none show">
           <div class="overflow-auto">
           <table
             class="table table-bordered text-white"
@@ -75,7 +79,7 @@
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>@mdo</td>
-                
+
               </tr>
             </tbody>
           </table>
@@ -84,4 +88,5 @@
     </div>
     </div>
   </body>
+  <script src="index.js"></script>
 </html>
