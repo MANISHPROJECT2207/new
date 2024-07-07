@@ -1,15 +1,23 @@
-let angledownButton = document.querySelector(".faAngle")
-let show = document.querySelector(".show")
+let angledownButton = document.querySelectorAll(".faAngle")
+let show = document.querySelectorAll(".show")
+console.log(angledownButton);
+let idCheck = document.querySelectorAll(".idCheck")
 
-function faAngleChange() {
-    if(angledownButton.classList.contains("fa-angle-down")){
-    angledownButton.classList.remove("fa-angle-down")
-    angledownButton.classList.add("fa-angle-up")
-    show.classList.remove("d-none")
-    }
-    else{
-        angledownButton.classList.remove("fa-angle-up")
-        angledownButton.classList.add("fa-angle-down")
-        show.classList.add("d-none")
-    }
+for(let i=0;i<idCheck.length;i++){
+    idCheck[i].addEventListener("click",function(){
+        if(angledownButton[i].classList.contains("fa-angle-down")){
+            angledownButton[i].classList.remove("fa-angle-down")
+            angledownButton[i].classList.add("fa-angle-up")
+            show[i].classList.remove("d-none")
+            }
+            else{
+                angledownButton[i].classList.remove("fa-angle-up")
+                angledownButton[i].classList.add("fa-angle-down")
+                show[i].classList.add("d-none")
+            }
+    })
+}
+function faAngleChange(id) {
+    return;
+   
 }
